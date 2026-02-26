@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cornerstone Software Company</title>
+    <meta name="description" content="cornerstone-software company services">
+    <meta name="author" content="Cornerstone Team">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!--social meta tags-->
+    <meta property="og:title" content="Cornerstone Software Company"/>
+    <meta property="og:description" content="Durban chamber of commerce is a local organization of businesses that work together to strengthen the business interests of the group. The intent of a chamber of commerce is to foster networking and to advocate on the behalf of the community."/>
+    <meta property="og:url" content="https://minnie-star.github.io/wdd231/chamber/directory.html"/>
+    <meta property="og:image" content="https://minnie-star.github.io/wdd231/chamber/directory.html/images/img.png" />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <img src="assets/images/conerstone-logo.jpeg" alt="Cornerstone Software Company">
+         <div class="nav-title">
+            <h2>Cornerstone Software</h2>
         </div>
+        
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -20,29 +36,160 @@
         </ul>
     </nav>
 
+    <!-- Hero Slider -->
     <header class="hero">
-        <h1>Building Digital Foundations</h1>
-        <p>Reliable, scalable, and innovative software solutions for businesses worldwide.</p>
-        <a href="contact.html" class="btn">Get Started</a>
+        <div class="slide active" style="background-image: url('assets/images/slide1.jpg');">
+        <div class="overlay">
+            <h1>Building Digital Foundations</h1>
+            <p>Reliable, scalable, and innovative software solutions.</p>
+            <button id="getStartedBtn">Get Started</button>
+        </div>
+        </div>
+        <div class="slide" style="background-image: url('assets/images/slide2.jpg');">
+        <div class="overlay">
+            <h1>Custom Software Development</h1>
+            <p>Tailored solutions designed to fit your business needs.</p>
+            <button id="learnMoreBtn">Learn More</button>
+        </div>
+        </div>
+        <div class="slide" style="background-image: url('assets/images/slide3.jpg');">
+        <div class="overlay">
+            <h1>Mobile & Web Applications</h1>
+            <p>Engaging, responsive, and built for performance.</p>
+            <button id="contactBtn">Contact Us</button>
+        </div>
+        </div>
     </header>
 
     <section class="services">
-        <h2>Our Core Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Custom Software Development</h3>
-                <p>Tailored software solutions for your business needs.</p>
-            </div>
-            <div class="card">
-                <h3>Website Development</h3>
-                <p>Modern, responsive, and professional websites.</p>
-            </div>
-            <div class="card">
-                <h3>Mobile App Development</h3>
-                <p>iOS and Android apps designed for performance and user experience.</p>
-            </div>
+  <div class="services-grid">
+
+    <div class="service-item">
+      <div class="icon">
+        <!-- Development Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#0D3B66" viewBox="0 0 24 24">
+          <path d="M3 5h18v14H3V5zm2 2v10h14V7H5zm3 2h2v2H8V9zm0 4h2v2H8v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z"/>
+        </svg>
+        <h3>Development</h3>
+      </div>
+      <p>From conception and strategy to design and implementation, we develop and host premium websites for corporates, associations, government, and individuals.</p>
+    </div>
+
+    <div class="service-item">
+      <div class="icon">
+        <!-- Consulting Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#0D3B66" viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+        <h3>Consulting</h3>
+      </div>
+      <p>We help with planning, execution, and launch of your new website. For existing websites that are broken or not producing leads, our consulting team helps fix these problems.</p>
+    </div>
+
+    <div class="service-item">
+      <div class="icon">
+        <!-- Hosting Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#0D3B66" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v2H8V8zm0 4h8v2H8v-2z"/>
+        </svg>
+        <h3>Hosting</h3>
+      </div>
+      <p>Save yourself the time and effort to manage your server by letting our expert staff do it for you. Our Managed Hosting professionals will personally monitor and control your applications.</p>
+    </div>
+
+    <div class="service-item">
+      <div class="icon">
+        <!-- Maintenance Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#0D3B66" viewBox="0 0 24 24">
+          <path d="M21 7l-9 10-5-5 1.5-1.5L12 14l7.5-8.5L21 7z"/>
+        </svg>
+        <h3>Maintenance</h3>
+      </div>
+      <p>Our website maintenance services assure hands-on management of your site while you get on with your business, keeping it updated for you.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="services-detail">
+    <img src="assets/images/background2.jpg" alt="Backgroung-image" class="services-bg">
+  <div class="overlay">
+    <div class="services-columns">
+
+      <!-- Core Services Column -->
+      <div class="services-column">
+        <h2>Core Services</h2>
+
+        <div class="service-info">
+          <div class="title-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FAF0CA" viewBox="0 0 24 24">
+              <path d="M4 4h16v16H4V4z"/>
+            </svg>
+            <h3>Web Development</h3>
+          </div>
+          <p>Your website will be built just the way you want it, by listening carefully to requirements to deliver a highly professional website using the latest technology.</p>
         </div>
-    </section>
+
+        <div class="service-info">
+          <div class="title-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FAF0CA" viewBox="0 0 24 24">
+              <path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2z"/>
+            </svg>
+            <h3>Mobile Development</h3>
+          </div>
+          <p>Mobile devices are everywhere. Our websites can be optimised for all platforms so users have a seamless experience across devices.</p>
+        </div>
+
+        <div class="service-info">
+          <div class="title-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FAF0CA" viewBox="0 0 24 24">
+              <path d="M12 2l8 4v6c0 5.25-3.75 10-8 10s-8-4.75-8-10V6l8-4z"/>
+            </svg>
+            <h3>Website Security</h3>
+          </div>
+          <p>Our web application firewall is designed to filter traffic before it reaches your website, keeping your site secure.</p>
+        </div>
+      </div>
+
+      <!-- Additional Services Column -->
+      <div class="services-column">
+        <h2>Additional Services</h2>
+
+        <div class="service-info">
+          <div class="title-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FAF0CA" viewBox="0 0 24 24">
+              <path d="M3 3h18v18H3V3z"/>
+            </svg>
+            <h3>Graphic Design</h3>
+          </div>
+          <p>Whether you need a simple business card or a complex catalogue, we have the creativity and tools to deliver high-quality designs fast.</p>
+        </div>
+
+        <div class="service-info">
+          <div class="title-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FAF0CA" viewBox="0 0 24 24">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+            </svg>
+            <h3>Social Media</h3>
+          </div>
+          <p>A social network can open up new opportunities in communication and customer engagement. We help you leverage these platforms effectively.</p>
+        </div>
+
+        <div class="service-info">
+          <div class="title-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#FAF0CA" viewBox="0 0 24 24">
+              <path d="M4 4h16v16H4V4z"/>
+            </svg>
+            <h3>Online Marketing</h3>
+          </div>
+          <p>Creating a great website is only the first step. We help you market it online to reach the right audience and grow your business.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
 
     <footer>
         <p>&copy; 2026 Cornerstone Software Company | All rights reserved</p>
