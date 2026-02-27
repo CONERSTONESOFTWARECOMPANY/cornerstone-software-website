@@ -35,15 +35,6 @@ document.getElementById("contactBtn").addEventListener("click", () => {
   alert("Contact us today to discuss your project!");
 });
 
-
- window.addEventListener('scroll', function() {
-    const bg = document.querySelector('.services-bg');
-    let scrollY = window.scrollY;
-    bg.style.transform = `translateY(${scrollY * 0.3}px)`; 
-    // moves slower than scroll (0.3 factor)
-  });
-
-
     const form = document.querySelector('#contactForm');
     if (form) {
         form.addEventListener('submit', async (e) => {
