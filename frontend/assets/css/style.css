@@ -241,7 +241,7 @@ nav ul li a:hover::after {
   background-image: url('../images/background3.png');
   background-size: cover;
   background-position: center;
-  min-height: 400px; /* ensures image is visible */
+  min-height: 400px; 
   padding: 60px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
