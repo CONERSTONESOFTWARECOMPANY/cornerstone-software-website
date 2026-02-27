@@ -238,14 +238,13 @@ nav ul li a:hover::after {
 }
 
 .business-needs .background {
-  background-image: url('assets/images/s_schmolling-blue-waves-2317606_1280.png');
+  background-image: url('../images/background3.png');
   background-size: cover;
   background-position: center;
+  min-height: 400px; /* ensures image is visible */
   padding: 60px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-  background-blend-mode: overlay;
-   
 }
 
 .business-needs h2 {
