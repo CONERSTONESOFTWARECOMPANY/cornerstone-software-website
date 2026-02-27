@@ -228,3 +228,44 @@ nav ul li a:hover::after {
   line-height: 1.4;
   margin-bottom: 20px;
 }
+
+/* Business needs */
+.business-needs {
+  position: relative;
+  padding: 80px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.business-needs .background {
+  background-image: url('assets/images/s_schmolling-blue-waves-2317606_1280.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  background-blend-mode: overlay;
+   
+}
+
+.business-needs h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #FAF0CA;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.business-needs hr {
+  width: 60px;
+  border: 2px solid #FAF0CA;
+  margin: 20px auto;
+}
+
+.business-needs p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #f0f0f0;
+}
