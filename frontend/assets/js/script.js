@@ -1,39 +1,39 @@
 // Example for form submission
 document.addEventListener('DOMContentLoaded', () => {
     
-// Hero slider functionality
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+    // Hero slider functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) {
-      slide.classList.add("active");
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            if (i === index) {
+                slide.classList.add("active");
+            }
+        });
     }
-  });
-}
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
 
-// Auto-slide every 5 seconds
-setInterval(nextSlide, 5000);
+    // Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
 
-// Button interactions
-document.getElementById("getStartedBtn").addEventListener("click", () => {
-  alert("Getting started with Prime Web!");
-});
+    // Button interactions
+    document.getElementById("getStartedBtn").addEventListener("click", () => {
+        alert("Getting started with Prime Web!");
+    });
 
-document.getElementById("learnMoreBtn").addEventListener("click", () => {
-  alert("Learn more about our custom software solutions.");
-});
+    document.getElementById("learnMoreBtn").addEventListener("click", () => {
+        alert("Learn more about our custom software solutions.");
+    });
 
-document.getElementById("contactBtn").addEventListener("click", () => {
-  alert("Contact us today to discuss your project!");
-});
+    document.getElementById("contactBtn").addEventListener("click", () => {
+        alert("Contact us today to discuss your project!");
+    });
 
     const form = document.querySelector('#contactForm');
     if (form) {
@@ -57,22 +57,22 @@ document.getElementById("contactBtn").addEventListener("click", () => {
             }
         });
     }
+
+    // Scroll to Top Button functionality
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
