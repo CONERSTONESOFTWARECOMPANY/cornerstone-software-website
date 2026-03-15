@@ -58,6 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // navigation toggle for mobile
+    const navToggle = document.querySelector('.nav-toggle');
+    const navEl = document.querySelector('nav');
+    if (navToggle && navEl) {
+        navToggle.addEventListener('click', () => {
+            navEl.classList.toggle('nav-open');
+        });
+    }
+
     // Scroll to Top Button functionality
     const scrollTopBtn = document.getElementById("scrollTopBtn");
 
