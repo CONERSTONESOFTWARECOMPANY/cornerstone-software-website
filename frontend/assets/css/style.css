@@ -86,7 +86,7 @@ nav ul li a:hover::after {
 /* Hero Slider */
 .hero {
   position: relative;
-  height: 60vh;
+  height: 65vh;
   overflow: hidden;
   background: #000;
   width: 100vw;
@@ -540,10 +540,15 @@ nav {
     position: relative;
 }
 
+/* smaller header title so it fits with the hamburger icon */
+.nav-title h2 {
+    font-size: 1.2rem;
+}
+
 /* hamburger toggle button */
 .nav-toggle {
-    display: none;
-    background: none;
+    display: block;
+    background: transparent;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
@@ -598,7 +603,7 @@ nav ul li a {
 
 /* smaller hero height and text by default */
 .hero {
-    height: 50vh;
+    height: 65vh;
 }
 
 .overlay h1 {
@@ -640,14 +645,14 @@ nav ul li a {
 }
 
 @media (min-width: 768px) {
-    /* show hamburger only below tablet width */
+    /* hide hamburger on tablet+ */
     .nav-toggle {
         display: none;
     }
 
     nav {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         padding: 1rem var(--site-gutter);
     }
