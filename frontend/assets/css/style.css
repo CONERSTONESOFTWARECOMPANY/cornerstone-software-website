@@ -492,3 +492,158 @@ hr {
   border-top: 1px solid rgba(255,255,255,0.2);
   padding-top: 15px;
 }
+
+/* ======== mobile-first responsive tweaks ======== */
+
+/* stack navigation vertically on phones */
+nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    position: relative;
+}
+
+/* hamburger toggle button */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100;
+}
+
+.nav-toggle .hamburger,
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.nav-toggle .hamburger::before {
+    transform: translateY(-8px);
+}
+
+.nav-toggle .hamburger::after {
+    transform: translateY(5px);
+}
+
+/* links hidden by default on mobile */
+nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+}
+
+nav.nav-open ul {
+    display: flex;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+}
+
+/* smaller hero height and text by default */
+.hero {
+    height: 50vh;
+}
+
+.overlay h1 {
+    font-size: 1.8rem;
+}
+
+.overlay p {
+    font-size: 1rem;
+}
+
+/* single-column grids on narrow screens */
+.services-columns,
+.grid {
+    grid-template-columns: 1fr;
+}
+
+.service-cards {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-content {
+    padding: 30px;
+}
+
+/* tablet+ breakpoints */
+@media (min-width: 600px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .overlay p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    /* show hamburger only below tablet width */
+    .nav-toggle {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1rem;
+        width: auto;
+    }
+
+    nav ul li {
+        padding: 0;
+        width: auto;
+        text-align: center;
+    }
+
+    .services-columns,
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-cards {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+    }
+}
